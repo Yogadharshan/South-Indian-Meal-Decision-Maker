@@ -16,9 +16,11 @@ chutney =["Tomato Chutney"]
 food_list1 = break_and_dinner_foods
 
 def random_element(x):
-    a = rm.randint(0 , len(x-1), 1)
-    return x[a]
+    a = rm.randint(0 , len(x)-1)
+    return a
 
+b = random_element(break_and_dinner_foods)
+print(break_and_dinner_foods[b])
 #A loop to process the given inputs
 if food == 3:
     no_of_recipes = int(input("Enter no. of recipes you are going to enter:"))
@@ -38,9 +40,10 @@ if food == 3:
     print("Thank you! for giving us recipes")
 elif food == 2:
     print("The recipe you can prepare for now is\
-        ",random_element(lunch_foods),"with",random_element(side_dish_lunch))
+        ",lunch_foods[random_element(lunch_foods)],"with",side_dish_lunch[random_element(side_dish_lunch)])
 elif food == 1:
-    print("The recipe you can prepare for now is",random_element(break_and_dinner_foods)\
-        ,"with",random_element(chutney))
+    print("The recipe you can prepare for now is",\
+        break_and_dinner_foods[random_element(break_and_dinner_foods)],\
+            "with",chutney[random_element(chutney)])
 else:
     print("Invalid input, You have a typo")
