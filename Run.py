@@ -5,22 +5,21 @@ It gets the input from the user to predict what to cook whether
 in lunch or (breakfast or dinner)
 """
 import random as rm
+
 food = int(input("Enter-1 to predict for breakfast or dinner\
     \nEnter-2 to predict for lunch\
         \nEnter-3 to add any new recipes\nType 1 or 2 or 3:"))
-
 break_and_dinner_foods =  ["Dosa","Idly","Chappathi","Noodle"]
 lunch_foods = ['Turmeric Rice']
 side_dish_lunch = ["Fried Potatoes"]
 chutney =["Tomato Chutney"]
-
 food_list1 = break_and_dinner_foods
 
 def random_element(x):
     a = rm.randint(0 , len(x-1), 1)
     return x[a]
+
 #A loop to process the given inputs
-# Asking the user to enter the number of recipes they want to enter.
 if food == 3:
     no_of_recipes = int(input("Enter no. of recipes you are going to enter:"))
     for i in range(no_of_recipes):
