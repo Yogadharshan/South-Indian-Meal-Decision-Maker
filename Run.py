@@ -1,11 +1,9 @@
 #South Indian Meal Decision Maker
-
 """
 It gets the input from the user to predict what to cook whether 
 in lunch or (breakfast or dinner)
 """
 import random as rm
-
 food = int(input("Enter-1 to predict for breakfast or dinner\
     \nEnter-2 to predict for lunch\
         \nEnter-3 to add any new recipes\nType 1 or 2 or 3:"))
@@ -33,6 +31,8 @@ if food == 3:
         elif lunch_or_break == 2:
             chutney_input = input("Enter Chutney:")
             chutney.append(chutney_input)
+            break_dish = input("Enter breakfast or dinner dish:")
+            break_and_dinner_foods.append(break_dish)
         else:
             print("Invalild number, You have typo.")
     print("Thank you! for giving us recipes")
@@ -45,3 +45,4 @@ elif food == 1:
             "with",chutney[random_element(chutney)])
 else:
     print("Invalid input, You have a typo")
+print("Thank You!")
