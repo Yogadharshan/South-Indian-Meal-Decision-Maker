@@ -1,7 +1,7 @@
 #South Indian Meal Decision Maker
 """
-It gets the input from the user to predict what to cook whether 
-in lunch or (breakfast or dinner)
+It gets the input from the user to decide what to cook whether 
+in lunch or breakfast or dinner
 """
 import random as rm
 food = int(input("Enter-1 to predict for breakfast or dinner\
