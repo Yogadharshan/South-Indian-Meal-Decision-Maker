@@ -19,8 +19,6 @@ def random_element(x):
     a = rm.randint(0 , len(x)-1)
     return a
 
-b = random_element(break_and_dinner_foods)
-print(break_and_dinner_foods[b])
 #A loop to process the given inputs
 if food == 3:
     no_of_recipes = int(input("Enter no. of recipes you are going to enter:"))
